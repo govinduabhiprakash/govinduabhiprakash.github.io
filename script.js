@@ -1,1 +1,1 @@
-alert("Hi I'm Abhiprakash");
+console.log("Being Zero")
