@@ -26,3 +26,7 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+.toggle{
+    background-color: rgb(229, 229, 243);
+    color: rgb(72, 148, 214);
+}
