@@ -1,0 +1,24 @@
+weather-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.city-name {
+    font-size: 24px;
+    color: #333;
+}
+
+.temperature {
+    font-size: 48px;
+    color: #ff9900;
+    margin-top: 10px;
+}
+
+.conditions {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
