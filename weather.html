@@ -37,11 +37,14 @@
         </div>
         <script>
             const apikey = "eb7a2d4a5a9b284fe54b7bb547238443";
-            const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=hyderabad";
+            const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
-            async function CheckWeather()
+            const searchBox =  document.querySelector(".search input");
+            const searchBtn =  document.querySelector(".search button");
+
+            async function CheckWeather(city)
             {
-                const response = await fetch(apiurl + '&appid=${apikey}');
+                const response = await fetch(apiurl + city + '&appid=${apikey}');
                 var data= await response.json();
 
                 console.log(data);
@@ -51,7 +54,11 @@
                 document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
             }
-            CheckWeather();
+            searchBtn.addEventListener("click", ()=>{
+                CheckWeather(searchBox.value);
+
+            })
+            
 
 
         </script>
