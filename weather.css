@@ -66,7 +66,11 @@
     text-align: left;
 }
 .col img{
-
     width: 40px;
     margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+
 }
